@@ -1,4 +1,4 @@
-import { useCallback,useState,useEffect } from "react";
+import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { TypeAnimation } from 'react-type-animation'
