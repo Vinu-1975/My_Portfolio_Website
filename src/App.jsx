@@ -109,23 +109,24 @@ const App = () => {
         </nav>
         <section className="about-me">
           <div className="about-me-text">
-            <div className="text-center">
               {/* <h2>Hello There! Im &ldquo;<span className="title">{}</span>&rdquo;</h2> */}
-              <h2>Hello There! Im &ldquo; &rdquo;</h2>
+              <h2>Hi! I&#39;m</h2>
+              <h2><span className="name">Vinayakan V S&#44;</span></h2>
+              <h2>I&#39;m a </h2>
               <TypeAnimation
                   sequence={[
-                    // Same substring at the start will only be typed out once, initially
-                    'Vinayakan V S',
-                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    'Full Stack Developer',
+                    2000,
+                    'Programmer',
+                    2000,
                     'Web Developer',
-                    1000,
+                    2000,
                   ]}
                   wrapper="span"
-                  speed={50}
-                  style={{ fontSize: '1.5em', display: 'inline-block',color: 'red' }}
+                  speed={25}
+                  style={{ fontSize: '1.5em', display: 'inline-block',color: 'blueviolet' }}
                   repeat={Infinity}
                 />
-            </div>
           </div>
           <div className="about-me-pic">
             <div className="avatar-container">
