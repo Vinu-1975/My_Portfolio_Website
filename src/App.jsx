@@ -1,9 +1,10 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import { TypeAnimation } from 'react-type-animation'
+// import { TypeAnimation } from 'react-type-animation'
 import './App.css';
-import myPic from './assets/my_photo2.png';
+// import myPic from './assets/my_photo2.png';
+import About from "./components/About";
 
 
 const App = () => {
@@ -107,35 +108,7 @@ const App = () => {
             <li>Achievements</li>
           </ul>
         </nav>
-        <section className="about-me">
-          <div className="about-me-text">
-              {/* <h2>Hello There! Im &ldquo;<span className="title">{}</span>&rdquo;</h2> */}
-              <h2>Hi! I&#39;m</h2>
-              <h2><span className="name">Vinayakan V S&#44;</span></h2>
-              <h2>I&#39;m a </h2>
-              <TypeAnimation
-                  sequence={[
-                    'Full Stack Developer',
-                    2000,
-                    'Programmer',
-                    2000,
-                    'Web Developer',
-                    2000,
-                  ]}
-                  wrapper="span"
-                  speed={25}
-                  style={{ fontSize: '1.5em', display: 'inline-block',color: 'blueviolet' }}
-                  repeat={Infinity}
-                />
-          </div>
-          <div className="about-me-pic">
-            <div className="avatar-container">
-                <div className="avatar">
-                    <img src={myPic} alt="hello" />
-                </div>
-            </div>
-          </div>
-        </section>
+        <About/>
         
       </div>
     );
