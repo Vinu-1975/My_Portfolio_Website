@@ -17,6 +17,10 @@ function About() {
                     2000,
                     'Web Developer',
                     2000,
+                    'Front-End Developer',
+                    2000,
+                    'Back-End Developer',
+                    2000,
                   ]}
                   wrapper="span"
                   speed={25}
