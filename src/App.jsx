@@ -5,7 +5,7 @@ import { loadSlim } from "tsparticles-slim";
 import './App.css';
 // import myPic from './assets/my_photo2.png';
 import About from "./components/About";
-
+import Projects from "./components/Projects";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -109,7 +109,7 @@ const App = () => {
           </ul>
         </nav>
         <About/>
-        
+        <Projects/>
       </div>
     );
 };

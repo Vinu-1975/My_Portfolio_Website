@@ -6,9 +6,9 @@ function About() {
     <section className="about-me">
           <div className="about-me-text">
               {/* <h2>Hello There! Im &ldquo;<span className="title">{}</span>&rdquo;</h2> */}
-              <h2>Hi! I&#39;m</h2>
+              <h3>Hi! I&#39;m</h3>
               <h2><span className="name">Vinayakan V S&#44;</span></h2>
-              <h2>I&#39;m a </h2>
+              <h3>I&#39;m a </h3>
               <TypeAnimation
                   sequence={[
                     'Full Stack Developer',

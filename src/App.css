@@ -52,7 +52,7 @@ ul li:hover{
 }
 
 .about-me{
-  /* border: 2px solid white; */
+  border: 2px solid white;
   height: 650px;
   display: flex;
   flex-direction: row;
@@ -67,6 +67,12 @@ ul li:hover{
   word-break: break-word;
   text-wrap: wrap;
   /* border: 2px solid red; */
+}
+
+.about-me-text h3 {
+  opacity: 0;
+  animation: slideBottom 1s ease forwards;
+  animation-delay: .7s;
 }
 
 .about-me-text .name{
@@ -84,7 +90,9 @@ ul li:hover{
 .about-me-pic{
   display: grid;
   place-items: center;
-  position: relative;;
+  position: relative;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
 }
 
 /* .avatar-container{
@@ -106,6 +114,7 @@ ul li:hover{
   left:50%;
   transform: translate(-50%,-50%);
   clip-path:inset(-100vw 0 0 0 round 50%);
+  
 }
 
 .avatar img{
@@ -121,4 +130,27 @@ ul li:hover{
 
 .avatar:hover img{
   transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+@keyframes slideRight{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideBottom {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateY(0px);
+    opacity: 1;
+  }
 }
