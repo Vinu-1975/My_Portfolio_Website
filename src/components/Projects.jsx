@@ -32,19 +32,15 @@ function Projects() {
       <div className="container">
         <h3>MY WORK</h3>
         <h1>Projects</h1>
-        <p>Come on in and check out my projects! They're not just lines of code or designs – they're the result of my love for solving problems and getting creative. Let's take a peek together into the world where my skills and ideas collide.</p>
+        <p>Come on in and check out my projects! They&apos;re not just lines of code or designs – they&apos;re the result of my love for solving problems and getting creative. Let&apos;s take a peek together into the world where my skills and ideas collide.</p>
         <div className="project-list">
-          {/* <div className="card"></div> */}
-          {/* Render your displayed projects here */}
           {displayedProjects.map((project) => (
             <div className="card" key={project.id}>
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                style={{ width: '100%', height: '100%', borderRadius: '15px' }}
-              />
-              <div className="project-info">
-                <h4>{project.title}</h4>
+              <div className="overlay">
+                <div className="project-buttons">
+                  <a href={project.link1} target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href={project.link2} target="_blank" rel="noopener noreferrer">Live Website</a>
+                </div>
               </div>
             </div>
           ))}
