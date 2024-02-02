@@ -41,10 +41,13 @@ ul{
 
 ul li{
   margin:0 15px;
-  background-color: rgb(235, 235, 235);
-  color: black;
+  /* background-color: rgb(235, 235, 235); */
+  color: white;
   padding: 2px 11px;
-  border-radius:46% 54% 54% 46% / 51% 49% 51% 49%;
+  /* border-radius:46% 54% 54% 46% / 51% 49% 51% 49%; */
+  opacity: 0;
+  animation: slideTop .7s ease forwards;
+  animation-delay: 0.2s;
 }
 ul li:hover{
   background-color: rgb(73, 73, 73);
@@ -153,4 +156,103 @@ ul li:hover{
     transform:translateY(0px);
     opacity: 1;
   }
+}
+@keyframes slideTop {
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform:translateY(0px);
+    opacity: 1;
+  }
+}
+.project{
+  border: 2px solid white;
+  width: 100%;
+  height:100vh;
+  padding:4vw;
+}
+.container{
+  border: 2px solid red;
+  height: 100%;
+  padding:3vw 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.container h1{
+  font-size: 5vw;
+}
+
+.container p{
+  display: block;
+  width: 1000px;
+  color: rgb(120, 120, 120);
+  font-size: 1.5rem;
+}
+
+.project-list{
+  border: 2px solid yellow;
+  flex: 1; 
+  padding: 2vw;
+  display: flex;
+  flex-direction:row;
+  overflow-y: auto;
+}
+
+.project .card {
+  position: relative;
+  width: 15em;
+  height: 10em;
+  max-height: 100%;
+  background: url('./assets/project_chattersphere.png');
+  background-size: contain; 
+  background-position: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  filter: brightness(50%);
+}
+
+.project .card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.project .card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.project .card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.project .card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.project .card:hover:after {
+  content: "HELLO";
 }
