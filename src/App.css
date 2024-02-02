@@ -256,3 +256,40 @@ ul li:hover{
 .project .card:hover:after {
   content: "HELLO";
 }
+
+/* Your existing CSS for .project, .container, and .project .card remains the same */
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pagination li {
+  margin: 0 5px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.pagination li:hover {
+  background-color: #eee;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #007bff;
+}
