@@ -76,7 +76,7 @@ const App = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 2,
                         straight: false,
                     },
                     number: {
@@ -84,7 +84,7 @@ const App = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 30,
+                        value: 20,
                     },
                     opacity: {
                         value: 0.5,
@@ -108,7 +108,7 @@ const App = () => {
             <li>Achievements</li>
           </ul>
         </nav>
-        {/* <About/> */}
+        <About/>
         <Projects/>
       </div>
     );

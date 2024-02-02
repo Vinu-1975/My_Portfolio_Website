@@ -11,7 +11,7 @@
 .particle-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url('./assets/background_6.svg');
   background-size: cover;
   background-position: center;
@@ -41,10 +41,8 @@ ul{
 
 ul li{
   margin:0 15px;
-  /* background-color: rgb(235, 235, 235); */
   color: white;
   padding: 2px 11px;
-  /* border-radius:46% 54% 54% 46% / 51% 49% 51% 49%; */
   opacity: 0;
   animation: slideTop .7s ease forwards;
   animation-delay: 0.2s;
@@ -55,13 +53,14 @@ ul li:hover{
 }
 
 .about-me{
-  border: 2px solid white;
-  height: 650px;
+  /* border: 2px solid white; */
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+
 .about-me-text {
   font-size: 2.5em;
   z-index: 1;
@@ -70,6 +69,7 @@ ul li:hover{
   word-break: break-word;
   text-wrap: wrap;
   /* border: 2px solid red; */
+  padding-left: 10vw;
 }
 
 .about-me-text h3 {
@@ -82,15 +82,8 @@ ul li:hover{
   color: blueviolet;
 }
 
-
 .about-me-pic{
   width: 50%;
-  /* height: 100%; */
-  /* border: 2px solid white; */
-
-}
-
-.about-me-pic{
   display: grid;
   place-items: center;
   position: relative;
