@@ -168,13 +168,13 @@ ul li:hover{
   }
 }
 .project{
-  border: 2px solid white;
+  /* border: 2px solid white; */
   width: 100%;
   height:100vh;
   padding:4vw;
 }
 .container{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 100%;
   padding:3vw 5vw;
   display: flex;
@@ -192,7 +192,7 @@ ul li:hover{
 }
 
 .project-list{
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   flex: 1; 
   padding: 2vw;
   display: flex;
@@ -262,7 +262,7 @@ ul li:hover{
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:space-evenly;
 }
 .card{
   

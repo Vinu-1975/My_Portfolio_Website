@@ -10,10 +10,10 @@ function Projects() {
     { id: 1, title: 'Project 1', imageUrl: './assets/project_chattersphere.png' },
     { id: 2, title: 'Project 2', imageUrl: './assets/project_chattersphere.png' },
     { id: 3, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
-    { id: 3, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
-    { id: 3, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
-    { id: 3, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
-    { id: 3, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
+    { id: 4, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
+    { id: 5, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
+    { id: 6, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
+    { id: 7, title: 'Project 3', imageUrl: './assets/project_chattersphere.png' },
   ];
 
   const pageCount = Math.ceil(projects.length / projectsPerPage);
@@ -67,3 +67,4 @@ function Projects() {
 }
 
 export default Projects
+
