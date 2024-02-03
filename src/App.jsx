@@ -6,6 +6,7 @@ import './App.css';
 // import myPic from './assets/my_photo2.png';
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Experience from "./components/Experience";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -110,6 +111,7 @@ const App = () => {
         </nav>
         <About/>
         <Projects/>
+        <Experience/>
       </div>
     );
 };

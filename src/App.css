@@ -8,6 +8,10 @@
   font-family: 'Inconsolata', monospace;
   font-family: 'Kenia', sans-serif;
 }
+html, body {
+  overscroll-behavior: none;
+}
+
 .particle-container {
   position: relative;
   width: 100%;
@@ -164,20 +168,29 @@ ul li:hover{
   width: 100%;
   height: 100vh;
   padding: 4vw;
+  /* opacity: 0; Set initial opacity to 0 */
+  /* transform: translateY(20px); Move it down a bit initially, adjust as needed */
+  /* transition: opacity 0.8s ease, transform 0.8s ease; Add transitions */
+  /* opacity: 0;
+  transition: opacity 1s ease; */
+}
+.project.visible {
+  opacity: 1;
+  /* transform: translateY(0); */
 }
 
-.container {
+.project .container {
   height: 100%;
   padding: 3vw 5vw;
   display: flex;
   flex-direction: column;
 }
 
-.container h1 {
+.project .container h1 {
   font-size: 5vw;
 }
 
-.container p {
+.project .container p {
   display: block;
   width: 1000px;
   color: rgb(120, 120, 120);
@@ -316,3 +329,32 @@ ul li:hover{
   border: 1px solid #007bff;
 }
 
+
+
+/* Experience section */
+
+.experience{
+  width: 100%;
+  height: 100vh;
+  padding: 4vw;
+}
+
+.experience .container{
+  height: 100%;
+  padding: 3vw 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.experience .timeline-container .company_logo_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.experience .timeline-container .company_logo{
+  height:800%;
+  width:80%;
+  object-fit: contain;
+}

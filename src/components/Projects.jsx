@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
 function Projects() {
@@ -27,8 +27,12 @@ function Projects() {
     setCurrentPage(selected);
   };
 
+  
+  
+
+
   return (
-    <section className="project">
+    <section className="project" >
       <div className="container">
         <h3>MY WORK</h3>
         <h1>Projects</h1>
