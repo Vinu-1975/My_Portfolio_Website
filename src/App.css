@@ -5,8 +5,10 @@
   box-sizing: border-box;
   padding: 0;
   color: rgb(235, 235, 235);
-  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Inconsolata', monospace; */
   font-family: 'Kenia', sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  user-select: none;
 }
 html, body {
   overscroll-behavior: none;
@@ -72,7 +74,7 @@ nav ul li:hover{
   max-width: 100%;
   word-break: break-word;
   text-wrap: wrap;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding-left: 10vw;
 }
 
@@ -85,6 +87,57 @@ nav ul li:hover{
 .about-me-text .name{
   color: blueviolet;
 }
+
+.about-me-text .contact-icons{
+  margin: 1vw 0;
+}
+
+.about-me-text .contact-icons ul{
+  list-style-type:none;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.about-me-text .contact-icons ul li{
+  /* border: 2px solid white; */
+  background-color: #002A53;
+  height:2.8vw;
+  width:2.8vw;
+  margin-right: 2vw;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.about-me-text .contact-icons ul a{
+  text-decoration: none;
+}
+.about-me-text .contact-icons ul li i{
+  font-size: 1.3vw;
+}
+
+.about-me-text .resume-button{
+  /* border: 2px solid white; */
+  margin-top: 5vh;
+  font-size: 26px;
+
+}
+
+.about-me-text .resume-button a{
+  text-decoration: none;
+  padding:0.3vw 0.6vw;
+  background-color: rgb(217, 217, 217);
+  color: #002A53;
+  border-radius: 0.4vw;
+}
+.about-me-text .resume-button a i{
+  color:#002A53;
+  margin-right: 0.5vw;
+  font-size: 3vh;
+}
+
 
 .about-me-pic{
   /* border: 2px solid red; */
