@@ -12,7 +12,18 @@
 }
 html, body {
   overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* body {
+  scrollbar-width: none;
+} */
+
+
 
 .particle-container {
   position: relative;
@@ -22,7 +33,10 @@ html, body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* overflow-y: scroll; */
 }
+
+
 
 nav{
   display: flex;
