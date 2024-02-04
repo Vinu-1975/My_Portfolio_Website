@@ -35,7 +35,7 @@ nav{
   font-size: 1.5rem;
 }
 
-ul{
+nav ul{
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ ul{
   align-items: center;
 }
 
-ul li{
+nav ul li{
   margin:0 15px;
   color: white;
   padding: 2px 11px;
@@ -51,7 +51,7 @@ ul li{
   animation: slideTop .7s ease forwards;
   animation-delay: 0.2s;
 }
-ul li:hover{
+nav ul li:hover{
   background-color: rgb(73, 73, 73);
   color: rgb(235, 235, 235);
 }
@@ -68,11 +68,11 @@ ul li:hover{
 .about-me-text {
   font-size: 2.5em;
   z-index: 1;
-  width: 35%;
+  width: 45%;
   max-width: 100%;
   word-break: break-word;
   text-wrap: wrap;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   padding-left: 10vw;
 }
 
@@ -87,7 +87,8 @@ ul li:hover{
 }
 
 .about-me-pic{
-  width: 50%;
+  /* border: 2px solid red; */
+  width: 45%;
   display: grid;
   place-items: center;
   position: relative;
@@ -105,8 +106,10 @@ ul li:hover{
 
 .avatar{
   border: 6px solid white;
-  width: 300px;
-  height:300px;
+  width: 20vw;
+  height:20vw;
+  /* width: 300px;
+  height:300px; */
   border-radius: 50%;
   background-color: rgb(223, 223, 223);
   position: absolute;

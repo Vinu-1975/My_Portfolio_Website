@@ -9,6 +9,11 @@ function About() {
               <h3>Hi! I&#39;m</h3>
               <h2><span className="name">Vinayakan V S&#44;</span></h2>
               <h3>I&#39;m a </h3>
+              <div className='contact-icons'>
+                <ul>
+                  <li></li>
+                </ul>
+              </div>
               <TypeAnimation
                   sequence={[
                     'Full Stack Developer',
