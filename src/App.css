@@ -19,9 +19,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* body {
-  scrollbar-width: none;
-} */
 
 
 
@@ -273,6 +270,7 @@ nav ul li:hover{
   display: flex;
   flex-direction: row;
   overflow-y: auto;
+  border: 2px solid white;
 }
 
 .project .card {
@@ -379,30 +377,31 @@ nav ul li:hover{
 
 .pagination {
   display: flex;
-  list-style: none;
-  padding: 0;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.pagination li {
-  margin: 0 5px;
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 6px;
   cursor: pointer;
-  user-select: none;
-  font-size: 14px;
-  padding: 5px 10px;
-  border: 1px solid #ddd;
-  border-radius: 25px;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: #eee;
+  border-color: #eee;
 }
 
-.pagination li:hover {
-  background-color: #eee;
-  color: black !important;
-}
-
-.pagination .active {
-  background-color: #007bff;
-  color: #fff;
-  border: 1px solid #007bff;
+.pagination button.active {
+  font-weight: 900;
+  border-color: #101010;
+  background: #ffe400;
+  color: #101010;
 }
 
 
