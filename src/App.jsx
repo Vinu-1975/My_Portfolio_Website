@@ -7,6 +7,7 @@ import './App.css';
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 const App = () => {
     const particlesInit = useCallback(async engine => {
@@ -112,6 +113,7 @@ const App = () => {
         <About/>
         <Projects/>
         <Experience/>
+        <Contact/>
       </div>
     );
 };

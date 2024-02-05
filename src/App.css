@@ -270,7 +270,7 @@ nav ul li:hover{
   display: flex;
   flex-direction: row;
   overflow-y: auto;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 
 .project .card {
@@ -375,33 +375,34 @@ nav ul li:hover{
   justify-content: space-evenly;
 }
 
-.pagination {
+.project .pagination {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 1rem;
 }
 
-.pagination button {
+.project .pagination button {
   width: 40px;
   height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 16px;
   margin: 0 10px;
-  border-radius: 6px;
+  border-radius: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   background: transparent;
   color: #eee;
   border-color: #eee;
+  font-family: "Poppins", sans-serif;;
 }
 
-.pagination button.active {
+.project .pagination button.active {
   font-weight: 900;
-  border-color: #101010;
-  background: #ffe400;
-  color: #101010;
+  /* border-color: #101010; */
+  background:#002A53;
+  color: rgb(236, 236, 236);
 }
 
 
@@ -466,4 +467,19 @@ nav ul li:hover{
 
 .experience .description-container ul li{
   margin: 1vh 0;
+}
+
+/* Contact section */
+
+.contact{
+  width: 100%;
+  height: 100vh;
+  padding: 4vw;
+}
+
+.contact .container{
+  height: 100%;
+  padding: 3vw 5vw;
+  display: flex;
+  flex-direction: column;
 }
