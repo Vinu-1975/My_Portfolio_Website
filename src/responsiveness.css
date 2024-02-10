@@ -22,7 +22,7 @@
     .about-me-text{
       width:80svw;
       /* border: 2px solid blue; */
-      padding: 9svw;
+      padding: 7.2svw;
     }
     .about-me-text .contact-icons{
       /* border: 2px solid yellow; */
@@ -65,12 +65,12 @@
         font-size: 9px;
     }
     .project .container h1 {
-        font-size: 5svw;
+        font-size: 8svw;
     }
     .project .container p {
         display: block;
         width: 75svw;
-        font-size: 5px;
+        font-size: 12px;
         word-wrap: break-word; 
         overflow-wrap: break-word; 
     }
@@ -91,10 +91,13 @@
         /* border: 2px solid white; */
         padding: 0;
     }
+    .experience .info .title{
+      font-size: 8svw;
+    }
     .experience .container p {
         display: block;
         width: 75svw;
         color: rgb(120, 120, 120);
-        font-size: 10px;
+        font-size: 12px;
       }
   }
