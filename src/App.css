@@ -24,13 +24,13 @@ body::-webkit-scrollbar {
 
 .particle-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-image: url('./assets/background_6.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 
@@ -70,7 +70,7 @@ nav ul li:hover{
 }
 
 .about-me{
-  /* border: 2px solid white; */
+  border: 2px solid white;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -199,6 +199,73 @@ nav ul li:hover{
   transform: translate(-50%, -50%) scale(1);
 }
 
+@media only screen and (max-width: 480px){
+  
+  nav{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    height: 10%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  nav ul{
+    border: 2px solid yellow;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me{
+    /* border: 2px solid red; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 8px;
+    padding-top: 10vh;
+  }
+  .about-me-text{
+    width:80vw;
+    border: 2px solid blue;
+    padding: 9vw;
+  }
+  .about-me-text .contact-icons{
+    /* border: 2px solid yellow; */
+    height: 4vh;
+  }
+
+  .about-me-text .contact-icons ul li{
+    /* border: 2px solid white; */
+    height: 4vh;
+    width: 8vw;
+    margin-right: 4vw;
+  }
+  .about-me-text .contact-icons ul li i{
+    font-size: 3.5vw;
+  }
+  .avatar{
+    width: 50vw;
+    height: 25vh;
+  }
+  .about-me-text .resume-button{
+    /* border: 2px solid white; */
+    margin-top: 2vh;
+    font-size: 26px;
+  
+  }
+}
 
 
 @keyframes slideRight{
