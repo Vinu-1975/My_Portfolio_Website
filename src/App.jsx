@@ -22,7 +22,7 @@ const App = () => {
     await console.log(container);
   }, []);
 
-  const [currentTab, setCurrentTab] = useState("about");
+  
 
   useEffect(() => {
     const handleScroll = () => {
