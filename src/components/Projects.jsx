@@ -13,7 +13,7 @@ function Projects() {
   const currentProjects = projects.slice(firstProjectIndex,lastProjectIndex)
 
   return (
-    <section className="project">
+    <section className="project" id='project'>
       <div className="container">
         <h3>MY WORK</h3>
         <h1>Projects</h1>

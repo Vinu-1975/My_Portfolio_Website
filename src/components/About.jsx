@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 import Resume from '../resources/Vinayakan_V_S_Resume.pdf'
 function About() {
   return (
-    <section className="about-me">
+    <section className="about-me" id='about-me'>
           <div className="about-me-text">
               {/* <h2>Hello There! Im &ldquo;<span className="title">{}</span>&rdquo;</h2> */}
               <h3>Hi! I&#39;m</h3>
