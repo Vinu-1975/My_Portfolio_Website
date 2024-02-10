@@ -1,5 +1,6 @@
 import { VerticalTimeline,VerticalTimelineElement } from "react-vertical-timeline-component"
 import 'react-vertical-timeline-component/style.min.css'
+import einsicht from '../assets/einsicht_tech.png'
 
 function Experience() {
   return (
@@ -14,12 +15,12 @@ function Experience() {
                     <VerticalTimelineElement
                         contentStyle={{background:'#1d1836',color:"#fff"}}
                         contentArrowStyle={{borderRight:"7px solid #232631"}}
-                        date="March 2020 - April 2021"
+                        date="Nov 2022 - Dec 2022"
                         iconStyle={{background:"#E6DEDD"}}
                         icon={
                             <div className="company_logo_container">
                                 <img 
-                                    src="./src/assets/einsicht_tech.png"
+                                    src={einsicht}
                                     alt="Einsicht Technologies"
                                     className="company_logo" 
                                 />
@@ -29,8 +30,8 @@ function Experience() {
                         <div className="description-container">
                             <h3 className="job-title">Web Developer Intern</h3>
                             <p className="company-name">Einsicht Technologies</p>
-                            <ul>
-                                <li> Collaborated with two other interns to create a culturally tailored, responsive login/signup interface.</li>
+                            <ul className="description">
+                                <li>Collaborated with two other interns to create a culturally tailored, responsive login/signup interface.</li>
                                 <li>Utilized HTML, CSS, JavaScript, and jQuery to implement responsive and user-friendly authentication interfaces, enhancing user experience and security</li>
                                 <li>Gained exposure to Figma for design mockups and incorporated HTML code within PHP scripts, broadening my understanding of web development frameworks.</li>
                             </ul>

@@ -103,7 +103,7 @@ const App = () => {
       <About />
       <Projects />
       <Experience />
-      <Contact />
+      <Contact/>
     </div>
   );
 };

@@ -6,8 +6,8 @@ function About() {
     <section className="about-me" id='about-me'>
           <div className="about-me-text">
               {/* <h2>Hello There! Im &ldquo;<span className="title">{}</span>&rdquo;</h2> */}
-              <h3>Hi! I&#39;m</h3>
-              <h2><span className="name">Vinayakan V S&#44;</span></h2>
+              <h3>Hey! Its Me,</h3>
+              <h2><span className="name">Vinayakan V S.<link href="https://fonts.googleapis.com/css?family=Miltonian+Tattoo:regular" rel="stylesheet" /></span></h2>
               <h3>I&#39;m a </h3>
               <TypeAnimation
                   sequence={[

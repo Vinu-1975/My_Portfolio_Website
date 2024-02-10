@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;700;900&family=Kenia&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 *{
   margin: 0;
   box-sizing: border-box;
   padding: 0;
   color: rgb(255, 255, 255,0.87);
   /* font-family: 'Inconsolata', monospace; */
-  font-family: 'Kenia', sans-serif;
+  /* font-family: 'Kenia', sans-serif; */
+  font-family: 'Protest Strike', sans-serif;
   /* font-family: "Poppins", sans-serif; */
   user-select: none;
 }
@@ -67,11 +70,10 @@ nav ul a{
 }
 nav ul li a.active {
   color: #007bff;
+  text-shadow: rgba(0,98,255,0.58) 0px 0px 16px; 
 }
 .active {
-  /* Add your preferred styles for the active tab */
-  font-weight: bold; /* Example: make the text bold */
-  color: #ff0000; /* Example: change text color to red */
+  font-weight: bold;
 }
 
 nav ul li{
@@ -273,14 +275,14 @@ nav ul a:hover{
 }
 
 .project .container h1 {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .project .container p {
   display: block;
-  width: 1000px;
+  width: 75svw;
   color: rgb(120, 120, 120);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .project-list {
@@ -442,14 +444,14 @@ nav ul a:hover{
 }
 
 .experience .container .title{
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
 .experience .container p {
   display: block;
-  width: 1000px;
+  width: 75svw;
   color: rgb(120, 120, 120);
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .experience .timeline-container{
@@ -474,17 +476,18 @@ nav ul a:hover{
   font-size: 24px;
 }
 
-.experience .description-container ul{
+.experience .description-container .description{
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   list-style-type: disc;
   padding-left: 20px;
   margin: 15px 0;
-  font-family: "Poppins", sans-serif;
+  font-family:sans-serif;
 }
 
 .experience .description-container ul li{
+  color: rgb(255, 255, 255,0.5);
   margin: 1vh 0;
 }
 
