@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
-  color: rgb(235, 235, 235);
+  color: rgb(255, 255, 255,0.87);
   /* font-family: 'Inconsolata', monospace; */
   font-family: 'Kenia', sans-serif;
   /* font-family: "Poppins", sans-serif; */
@@ -40,8 +40,7 @@ nav{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* border: 2px solid white; */
-  height: 10%;
+  height: 17vh;
   width: 100%;
   position: fixed;
   z-index: 10;
@@ -49,24 +48,41 @@ nav{
 }
 
 nav ul{
+  border-radius: 50px;
+  width: 50%;
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+nav ul a{
+  color: rgb(255, 255, 255,0.6);
+  text-decoration: none;
+}
+nav ul li a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+.active {
+  /* Add your preferred styles for the active tab */
+  font-weight: bold; /* Example: make the text bold */
+  color: #ff0000; /* Example: change text color to red */
 }
 
 nav ul li{
   margin:0 15px;
-  color: white;
   padding: 2px 11px;
   opacity: 0;
   animation: slideTop .7s ease forwards;
   animation-delay: 0.2s;
 }
-nav ul li:hover{
-  background-color: rgb(73, 73, 73);
-  color: rgb(235, 235, 235);
+nav ul a:hover{
+  color:#002A53;
 }
 
 .about-me{
@@ -124,9 +140,13 @@ nav ul li:hover{
 
 .about-me-text .contact-icons ul a{
   text-decoration: none;
+  cursor:default;
 }
 .about-me-text .contact-icons ul li i{
   font-size: 1.3vw;
+}
+.about-me-text .contact-icons ul li i:hover{
+  cursor: pointer;
 }
 
 .about-me-text .resume-button{

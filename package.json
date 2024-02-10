@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Vinu-1975.gith ub.io/My_Portfolio_Website/",
+  "homepage": "https://Vinu-1975.github.io/My_Portfolio_Website/",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-paginate": "^8.2.0",
     "react-particles": "^2.12.2",
+    "react-router-dom": "^6.22.0",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
     "tsparticles-slim": "^2.12.0"
