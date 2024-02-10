@@ -6,7 +6,7 @@ function Projects() {
 
   const [currentPage,setCurretPage] = useState(1)
   // eslint-disable-next-line no-unused-vars
-  const [projectsPerPage, _setProjectsPerPage] = useState(3)
+  const [projectsPerPage, _setProjectsPerPage] = useState(2)
   
   const lastProjectIndex = currentPage * projectsPerPage
   const firstProjectIndex = lastProjectIndex - projectsPerPage;

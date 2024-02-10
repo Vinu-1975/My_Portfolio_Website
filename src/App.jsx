@@ -1,9 +1,8 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-// import { TypeAnimation } from 'react-type-animation'
 import './App.css';
-// import myPic from './assets/my_photo2.png';
+import './responsiveness.css'
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
