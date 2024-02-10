@@ -50,6 +50,7 @@ nav{
 nav ul{
   border-radius: 50px;
   width: 50%;
+  height:6svh;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -65,8 +66,7 @@ nav ul a{
   text-decoration: none;
 }
 nav ul li a.active {
-  background-color: #007bff;
-  color: #fff;
+  color: #007bff;
 }
 .active {
   /* Add your preferred styles for the active tab */

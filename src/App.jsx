@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import "./App.css";
@@ -7,6 +7,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -20,80 +21,6 @@ const App = () => {
 
   const particlesLoaded = useCallback(async (container) => {
     await console.log(container);
-  }, []);
-
-  const [currentTab, setCurrentTab] = useState("about");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.getElementById("about-me");
-      const projectSection = document.getElementById("project");
-      const experienceSection = document.getElementById("experience");
-      const contactSection = document.getElementById("contact");
-
-      const scrollPosition = window.scrollY + 200; // Offset to account for navbar height or other factors
-
-      if (
-        scrollPosition >= aboutSection.offsetTop &&
-        scrollPosition < projectSection.offsetTop
-      ) {
-        setCurrentTab("about");
-      } else if (
-        scrollPosition >= projectSection.offsetTop &&
-        scrollPosition < experienceSection.offsetTop
-      ) {
-        setCurrentTab("projects");
-      } else if (
-        scrollPosition >= experienceSection.offsetTop &&
-        scrollPosition < contactSection.offsetTop
-      ) {
-        setCurrentTab("experience");
-      } else if (scrollPosition >= contactSection.offsetTop) {
-        setCurrentTab("contact");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection = document.getElementById("about-me");
-      const projectSection = document.getElementById("project");
-      const experienceSection = document.getElementById("experience");
-      const contactSection = document.getElementById("contact");
-
-      const scrollPosition = window.scrollY + 200; // Offset to account for navbar height or other factors
-
-      if (
-        scrollPosition >= aboutSection.offsetTop &&
-        scrollPosition < projectSection.offsetTop
-      ) {
-        setCurrentTab("about");
-      } else if (
-        scrollPosition >= projectSection.offsetTop &&
-        scrollPosition < experienceSection.offsetTop
-      ) {
-        setCurrentTab("projects");
-      } else if (
-        scrollPosition >= experienceSection.offsetTop &&
-        scrollPosition < contactSection.offsetTop
-      ) {
-        setCurrentTab("experience");
-      } else if (scrollPosition >= contactSection.offsetTop) {
-        setCurrentTab("contact");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
   }, []);
 
   return (
@@ -172,22 +99,7 @@ const App = () => {
           detectRetina: true,
         }}
       />
-      <nav>
-        <ul>
-          <li>
-            <a href="#about-me" className={currentTab === "about" ? "active" : ""}>About</a>
-          </li>
-          <li>
-            <a href="#project" className={currentTab === "projects" ? "active" : ""}>Projects</a>
-          </li>
-          <li>
-            <a href="#experience" className={currentTab === "experience" ? "active" : ""}>Experience</a>
-          </li>
-          <li>
-            <a href="#contact" className={currentTab === "contact" ? "active" : ""}>Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <NavBar/>
       <About />
       <Projects />
       <Experience />
