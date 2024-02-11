@@ -16,7 +16,10 @@ const techs = {
   "jQuery": "darkblue",
   "PHP": "deepskyblue",
   "MySQL": "darkslategrey",
-  "XAMPP": "darkgoldenrod"
+  "XAMPP": "darkgoldenrod",
+  "Python": "darkgreen",
+  "Pygame": "orangered",
+  "Stockfish": "darkcyan"
 }
 
 const projects = [
@@ -79,7 +82,22 @@ const projects = [
   { 
     id: 3, 
     title: "CheckMate Academy", 
-    imageUrl: project_chess 
+    imageUrl: project_chess,
+    about:"Chess game with puzzles, tutorials, AI modes. Features hint provision, diverse modes, and real-time game evaluation for enhanced strategic decision-making and engaging user experience.",
+    technologies:[
+      {
+        tech:'Python',
+        color:techs.Python
+      },
+      {
+        tech:'Pygames',
+        color:techs.Pygame
+      },
+      {
+        tech:'Stockfish',
+        color:techs.Stockfish
+      },
+    ]
   },
   { 
     id: 4, 
