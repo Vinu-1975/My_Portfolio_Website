@@ -12,14 +12,15 @@ const techs = {
   "Socket.io":"white",
   "HTML": "orangered",
   "CSS": "royalblue",
-  "JavaScript": "yellow",
+  "JavaScript": "gold",
   "jQuery": "darkblue",
   "PHP": "deepskyblue",
   "MySQL": "darkslategrey",
   "XAMPP": "darkgoldenrod",
   "Python": "darkgreen",
   "Pygame": "orangered",
-  "Stockfish": "darkcyan"
+  "Stockfish": "darkcyan",
+  "Java": "darkorange"
 }
 
 const projects = [
@@ -102,12 +103,34 @@ const projects = [
   { 
     id: 4, 
     title: "Railway Management System", 
-    imageUrl: project_railway 
+    imageUrl: project_railway,
+    about:"Java-based Railway Reservation System for Admins to manage trains and Users to book tickets, utilizing OOP principles.",
+    technologies:[
+      {
+        tech:'Java',
+        color:techs.Java
+      }
+    ]
   },
   { 
     id: 5, 
     title: "Learn4U", 
-    imageUrl: project_learn4u 
+    imageUrl: project_learn4u,
+    about:"Online learning platform providing courses in programming, software development, physical education, and diverse subjects for comprehensive learning.",
+    technologies:[
+      {
+        tech:'HTML5',
+        color:techs.HTML
+      },
+      {
+        tech:'CSS',
+        color:techs.CSS
+      },
+      {
+        tech:'Javascript',
+        color:techs.JavaScript
+      },
+    ]
   },
 ];
 
