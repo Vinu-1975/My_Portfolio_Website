@@ -52,7 +52,7 @@ const projects = [
     id: 2, 
     title: "GreInsights", 
     imageUrl: project_gre ,
-    about:"app analyzes GRE scores, offers Ivy League recommendations based on 5-year admission trends. Ideal for college-bound students seeking guidance.",
+    about:"This app analyzes GRE scores, offers Ivy League recommendations based on 5-year admission trends. Ideal for college-bound students seeking guidance.",
     technologies:[
       {
         tech:'HTML5',
