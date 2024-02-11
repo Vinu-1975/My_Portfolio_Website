@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;700;900&family=Kenia&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400&family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 *{
   margin: 0;
@@ -254,7 +254,7 @@ nav ul a:hover{
 }
 .project {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 4vw;
   /* opacity: 0; Set initial opacity to 0 */
   /* transform: translateY(20px); Move it down a bit initially, adjust as needed */
@@ -294,10 +294,27 @@ nav ul a:hover{
   /* border: 2px solid white; */
 }
 
+.project .card-container{
+  /* border: 2px solid red; */
+  height:max-content;
+  padding:2svh;
+  width:22svw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
 .project .card {
   position: relative;
-  width: 15em;
-  height: 10em;
+  width:20svw;
+  height: 25svh;
   max-height: 100%;
   background-size: contain;
   background-position: center;
@@ -311,6 +328,7 @@ nav ul a:hover{
   cursor: pointer;
   filter: brightness(50%);
   overflow: hidden;
+  /* border: 6px solid white; */
 }
 .project .card img{
   width: 100%;
@@ -394,6 +412,25 @@ nav ul a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.project .card-container .project-info{
+  /* border: 2px solid white; */
+  font-family: 'DM Sans', sans-serif;
+}
+
+.project .card-container .tech-stack{
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1vw;
+  flex-wrap: wrap;
+}
+.tech-stack .tech{
+  font-family: 'DM Sans', sans-serif;
+  margin-right: 1svw;
 }
 
 .project .pagination {
