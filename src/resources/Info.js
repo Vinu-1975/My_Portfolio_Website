@@ -67,6 +67,10 @@ const projects = [
         color:techs.CSS
       },
       {
+        tech:'Javascript',
+        color:techs.JavaScript
+      },
+      {
         tech:'MySQL',
         color:techs.MySQL
       },
