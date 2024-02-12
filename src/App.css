@@ -420,7 +420,8 @@ nav ul a:hover{
 }
 
 .project .card-container .tech-stack{
-  /* border: 2px solid yellow; */
+  border: 2px solid yellow;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
