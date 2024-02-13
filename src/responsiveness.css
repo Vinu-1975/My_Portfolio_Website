@@ -51,8 +51,9 @@
   .project {
     /* border: 2px solid white; */
     width: 100svw;
-    height: 100svh;
+    height: 100%;
     padding: 0;
+    padding-bottom: 4svh;
   }
   .project .container {
     /* border: 2px solid red; */
@@ -79,14 +80,15 @@
     align-items: center;
     margin-top: 0;
     padding: 0 !important;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     justify-content: flex-start;
     flex: 0;
   }
 
   .project .card-container {
     width: 100%;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    margin: 2svh 0;
   }
 
   .project .card {

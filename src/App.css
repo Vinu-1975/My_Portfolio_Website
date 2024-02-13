@@ -253,7 +253,7 @@ nav ul a:hover{
   }
 }
 .project {
-  width: 100%;
+  width: fit-content;
   height: 100%;
   padding: 4vw;
   /* opacity: 0; Set initial opacity to 0 */
@@ -293,7 +293,7 @@ nav ul a:hover{
   /* flex-wrap: wrap; */
   flex: 1;
   /* overflow-y: auto; */
-  border: 20px solid white;
+  /* border: 20px solid white; */
 }
 
 .project .card-container{
