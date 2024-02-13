@@ -1,103 +1,117 @@
-@media only screen and (max-width: 480px){
-  
-    nav{
-      display: none;
-    }
-  
-    nav ul{
-      flex-direction: column;
-    }
-  
-    .about-me{
-      /* border: 2px solid red; */
-      height: 100svh;
-      width: 100svw;
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: space-evenly;
-      align-items: center;
-      font-size: 8px;
-      padding-top: 10svh;
-    }
-    .about-me-text{
-      width:80svw;
-      /* border: 2px solid blue; */
-      padding: 7.2svw;
-    }
-    .about-me-text .contact-icons{
-      /* border: 2px solid yellow; */
-      height: 4svh;
-    }
-  
-    .about-me-text .contact-icons ul li{
-      /* border: 2px solid white; */
-      height: 4svh;
-      width: 8svw;
-      margin-right: 4svw;
-    }
-    .about-me-text .contact-icons ul li i{
-      font-size: 3.5svw;
-    }
-    .avatar{
-      width: 50svw;
-      height: 25svh;
-    }
-    .about-me-text .resume-button{
-      /* border: 2px solid white; */
-      margin-top: 2svh;
-      font-size: 26px;
-    }
-
-
-    /* PROJECT section */
-    .project {
-        /* border: 2px solid white; */
-        width: 100svw;
-        height: 100svh;
-        padding: 0;
-    }
-    .project .container {
-        /* border: 2px solid red; */
-        height: 100%;
-        padding: 3svw 5svw;
-        display: flex;
-        flex-direction: column;
-        font-size: 9px;
-    }
-    .project .container h1 {
-        font-size: 8svw;
-    }
-    .project .container p {
-        display: block;
-        width: 75svw;
-        font-size: 12px;
-        word-wrap: break-word; 
-        overflow-wrap: break-word; 
-    }
-    .project-list {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-top: 1svh;
-        /* border: 2px solid white; */
-    }
-    .project .card{
-        width: 90%;
-    }
-
-    /* EXPERIENCE Section */
-
-    .experience{
-        /* border: 2px solid white; */
-        padding: 0;
-    }
-    .experience .info .title{
-      font-size: 8svw;
-    }
-    .experience .container p {
-        display: block;
-        width: 75svw;
-        color: rgb(120, 120, 120);
-        font-size: 12px;
-      }
+@media only screen and (max-width: 480px) {
+  nav {
+    display: none;
   }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .about-me {
+    /* border: 2px solid red; */
+    height: 100svh;
+    width: 100svw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 8px;
+    padding-top: 10svh;
+  }
+  .about-me-text {
+    width: 80svw;
+    /* border: 2px solid blue; */
+    padding: 7.2svw;
+  }
+  .about-me-text .contact-icons {
+    /* border: 2px solid yellow; */
+    height: 4svh;
+  }
+
+  .about-me-text .contact-icons ul li {
+    /* border: 2px solid white; */
+    height: 4svh;
+    width: 8svw;
+    margin-right: 4svw;
+  }
+  .about-me-text .contact-icons ul li i {
+    font-size: 3.5svw;
+  }
+  .avatar {
+    width: 50svw;
+    height: 25svh;
+  }
+  .about-me-text .resume-button {
+    /* border: 2px solid white; */
+    margin-top: 2svh;
+    font-size: 26px;
+  }
+
+  /* PROJECT section */
+  .project {
+    /* border: 2px solid white; */
+    width: 100svw;
+    height: 100svh;
+    padding: 0;
+  }
+  .project .container {
+    /* border: 2px solid red; */
+    height: 100%;
+    padding: 3svw 5svw;
+    display: flex;
+    flex-direction: column;
+    font-size: 9px;
+  }
+  .project .container h1 {
+    font-size: 8svw;
+  }
+  .project .container p {
+    display: block;
+    width: 75svw;
+    font-size: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .project-list {
+    height: auto;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-top: 0;
+    padding: 0 !important;
+    border: 2px solid red;
+    justify-content: flex-start;
+    flex: 0;
+  }
+
+  .project .card-container {
+    width: 100%;
+    border: 2px solid yellow;
+  }
+
+  .project .card {
+    width: 90%;
+  }
+  .project .card-container .project-info {
+    font-size: 1.6em;
+  }
+  .project .card-container .tech-stack {
+    font-size: 1.6em;
+  }
+
+  /* EXPERIENCE Section */
+
+  .experience {
+    /* border: 2px solid white; */
+    padding: 0;
+  }
+  .experience .info .title {
+    font-size: 8svw;
+  }
+  .experience .container p {
+    display: block;
+    width: 75svw;
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+  }
+}

@@ -286,19 +286,21 @@ nav ul a:hover{
 }
 
 .project-list {
-  flex: 1;
   padding: 2vw;
   display: flex;
   flex-direction: row;
-  overflow-y: auto;
-  /* border: 2px solid white; */
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  flex: 1;
+  /* overflow-y: auto; */
+  border: 20px solid white;
 }
 
 .project .card-container{
   /* border: 2px solid red; */
   height:max-content;
   padding:2svh;
-  width:22svw;
+  width:22em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -313,8 +315,10 @@ nav ul a:hover{
 
 .project .card {
   position: relative;
-  width:20svw;
-  height: 25svh;
+  width:13em;
+  height: 8em;
+  /* width:20em;
+  height: 18svh; */
   max-height: 100%;
   background-size: contain;
   background-position: center;
@@ -326,7 +330,7 @@ nav ul a:hover{
   font-weight: bold;
   border-radius: 15px;
   cursor: pointer;
-  filter: brightness(50%);
+  /* filter: brightness(50%); */
   overflow: hidden;
   /* border: 6px solid white; */
 }
@@ -407,26 +411,20 @@ nav ul a:hover{
   font-family: 'Courier New', Courier, monospace;
 }
 
-
-.project-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 .project .card-container .project-info{
   /* border: 2px solid white; */
   font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
 }
 
 .project .card-container .tech-stack{
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  font-size: 1vw;
+  font-size: 1em;
   flex-wrap: wrap;
 }
 .tech-stack .tech{
@@ -522,6 +520,10 @@ nav ul a:hover{
   padding-left: 20px;
   margin: 15px 0;
   font-family:sans-serif;
+}
+
+.experience .description-container .description li{
+  font-family: 'DM Sans', sans-serif;
 }
 
 .experience .description-container ul li{
