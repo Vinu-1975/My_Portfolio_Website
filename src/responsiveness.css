@@ -53,7 +53,7 @@
     width: 100svw;
     height: 100%;
     padding: 0;
-    padding-bottom: 4svh;
+    padding-bottom: 15svh;
   }
   .project .container {
     /* border: 2px solid red; */
@@ -65,8 +65,11 @@
   }
   .project .container h1 {
     font-size: 8svw;
+    margin-left: 1svh;
+    margin-bottom: 1svh;
   }
   .project .container p {
+    margin-left: 1.5svh;
     display: block;
     width: 75svw;
     font-size: 12px;
@@ -88,7 +91,7 @@
   .project .card-container {
     width: 100%;
     /* border: 2px solid yellow; */
-    margin: 2svh 0;
+    margin-top: 2svh;
   }
 
   .project .card {
@@ -109,11 +112,15 @@
   }
   .experience .info .title {
     font-size: 8svw;
+    margin-left: 1svh;
+    margin-bottom: 1svh;
   }
   .experience .container p {
     display: block;
     width: 75svw;
     color: rgb(120, 120, 120);
-    font-size: 12px;
+    font-size: 14px;
+    margin-left: 1svh;
+    margin-bottom: 5svh;
   }
 }
