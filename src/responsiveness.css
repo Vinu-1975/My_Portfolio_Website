@@ -123,4 +123,45 @@
     margin-left: 1svh;
     margin-bottom: 5svh;
   }
+
+  .contact .container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid red; */
+  }
+
+  
+  .contact .info{
+    /* border: 2px solid white; */
+    width: 100%;
+    margin-top: -10svh;
+    text-align: center;
+  }
+  
+  .contact .info .title {
+    font-size: 8svw;
+    margin-left: 1svh;
+    margin-bottom: 1svh;
+  }
+
+  .contact .container p {
+    display: block;
+    width: 75svw;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+    margin-left: 1svh;
+    /* margin-bottom: 5svh; */
+  }
+
+  .contact .form-container{
+    width: 100%;
+    /* border: 2px solid green; */
+  }
+
+  .contact .login-box{
+    /* border: 2px solid yellow; */
+    height: 50svh;
+    width: 78svw;
+  }
 }
