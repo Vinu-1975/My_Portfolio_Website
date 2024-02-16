@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser"
 
 function Contact() {
   // template_46s82fn
@@ -22,9 +23,35 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
-    // You can add your logic to submit the form data
+    emailjs.send(
+      'service_48l89pu',
+      'template_46s82fn',
+      {
+        from_name: formData.name,
+        to_name: 'Vinayakan V S',
+        from_email:formData.email,
+        to_email: 'vinayakanvs2003@gmail.com',
+        message: formData.message
+      },
+      '2mPdkHPhIbKBMHWMQ'
+      )
+      .then(()=>{
+        alert('Thank You, I will get back to you ASAP!.')
+        setFormData(
+          {
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          }
+        )
+      },(error)=>{
+        console.log(error);
+        alert("Something went wrong !")
+      }
+      )
+
+      
   };
 
   return (
