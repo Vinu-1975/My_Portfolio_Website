@@ -717,3 +717,11 @@ nav ul a:hover {
   -webkit-animation: btn-anim1 2s linear infinite;
   animation: btn-anim1 2s linear infinite;
 }
+
+.footer{
+  width: 100%;
+  height: 2em;
+  display: grid;
+  place-items: center;
+}
+
