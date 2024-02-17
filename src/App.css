@@ -548,6 +548,7 @@ nav ul a:hover {
   width: 75svw;
   color: rgb(120, 120, 120);
   font-size: 1rem;
+  margin-left: 10px;
 }
 
 .contact .info {
@@ -584,6 +585,7 @@ nav ul a:hover {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+  
   /* border: 2px solid yellow; */
 }
 
@@ -604,6 +606,7 @@ nav ul a:hover {
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
+  font-family: "DM Sans", sans-serif;
 }
 
 .contact .login-box .user-box textarea {
@@ -619,6 +622,7 @@ nav ul a:hover {
 	width: 100%; /* Take up full width */
   height: 100px;
   resize: none;
+  font-family: "DM Sans", sans-serif;
 }
 
 .contact .login-box .user-box label {
@@ -631,6 +635,7 @@ nav ul a:hover {
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-family: "DM Sans", sans-serif;
 }
 
 .contact .login-box .user-box input:focus ~ label,
