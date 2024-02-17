@@ -156,6 +156,7 @@
 
   .contact .form-container{
     width: 100%;
+    padding: 0;
     /* border: 2px solid green; */
   }
 
@@ -163,5 +164,9 @@
     /* border: 2px solid yellow; */
     height: 50svh;
     width: 78svw;
+  }
+
+  .contact .login-box form button{
+    margin-top: 8svh;
   }
 }

@@ -84,7 +84,7 @@ function Contact() {
                 />
                 <label>Your email</label>
               </div>
-              <div className="user-box">
+              {/*<div className="user-box">
                 <input
                   type="text"
                   name="subject"
@@ -93,7 +93,7 @@ function Contact() {
                   required
                 />
                 <label>Subject</label>
-              </div>
+              </div> */}
               <div className="user-box">
                 <textarea
                   name="message"

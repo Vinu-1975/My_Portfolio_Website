@@ -559,8 +559,9 @@ nav ul a:hover {
   /* border: 2px solid red; */
   width: 40%;
   padding: 2em;
-  position: relative;
-
+  display: grid;
+  place-items: center;
+  /* position: relative; */
 }
 
 /* .contact .form-container form{
@@ -571,21 +572,15 @@ nav ul a:hover {
 
 /* forms */
 .contact .login-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 70%;
-  padding: 2px;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  width: 80%;
+  /* padding: 2px; */
   background:#001f3d;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-	height: 80%;
+	height: calc(90% + 50px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -632,7 +627,7 @@ nav ul a:hover {
   left: 0;
   padding: 10px 0;
   font-size: 16px;
-  /* color: #fff; */
+  color: #fff;
   pointer-events: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -654,11 +649,12 @@ nav ul a:hover {
   font-size: 12px;
 }
 
-.contact .login-box form a {
+.contact .login-box form button {
   position: relative;
-  display: inline-block;
+  /* display: inline-block; */
+  outline: none;
   padding: 10px 20px;
-  /* color: #ffffff; */
+  color: #ffffff;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -667,15 +663,18 @@ nav ul a:hover {
   transition: 0.5s;
   margin-top: 40px;
   letter-spacing: 4px;
+  border: none;
+  background-color: #002a53;
+  margin-top: 15svh;
 }
 
-.contact .login-box a:hover {
+.contact .login-box button:hover {
   background: #00386f;
   color: #fff;
   border-radius: 5px;
 }
 
-.contact .login-box a span {
+.contact .login-box button span {
   position: absolute;
   display: block;
 }
@@ -702,7 +701,7 @@ nav ul a:hover {
   }
 }
 
-.contact .login-box a span:nth-child(1) {
+.contact .login-box button span:nth-child(1) {
   bottom: 2px;
   left: -100%;
   width: 100%;
