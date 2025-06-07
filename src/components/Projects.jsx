@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 
 function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
-  // eslint-disable-next-line no-unused-vars
   const [projectsPerPage, setProjectsPerPage] = useState(2);
 
   // Function to update projects per page based on screen size
@@ -34,36 +33,36 @@ function Projects() {
   const currentProjects = projects.slice(firstProjectIndex, lastProjectIndex);
 
   const cardVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
   };
-  const textVariant = (delay) => {
-    return {
-      hidden: {
-        y: -50,
-        opacity: 0,
+  
+  const textVariant = {
+    hidden: {
+      y: -30,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        duration: 1.25,
+        delay: 0.2,
       },
-      show: {
-        y: 0,
-        opacity: 1,
-        transition: {
-          type: "spring",
-          duration: 1.25,
-          delay: delay,
-        },
-      },
-    };
+    },
   };
-
 
   return (
-    <section className="project" id="project">
+    <section className="project reveal" id="project">
       <div className="container">
         <motion.div 
           className="info"
-          // variants={textVariant(12)}
+          initial="hidden"
+          animate="visible"
+          variants={textVariant}
         >
-          <motion.h1 variants={textVariant}>Projects</motion.h1>
+          <h1>Projects</h1>
           <p>
             Come on in and check out my projects! They&apos;re not just lines of
             code or designs – they&apos;re the result of my love for solving
@@ -71,6 +70,7 @@ function Projects() {
             the world where my skills and ideas collide.
           </p>
         </motion.div>
+        
         <div className="project-list">
           {currentProjects.map((project) => (
             <motion.div 
@@ -79,43 +79,52 @@ function Projects() {
               variants={cardVariants}
               initial="hidden"
               animate="visible"
+              whileHover={{ y: -10, transition: { duration: 0.3 } }}
             >
               <div className="card">
-                <img src={`${project.imageUrl}`} alt="" />
-                <div className="overlay">
-                  <div className="project-buttons">
-                    <a
-                      href={projects.link1}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={projects.link2}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Demo
-                    </a>
+                <div className="card-image">
+                  <img src={`${project.imageUrl}`} alt={project.title} />
+                  <div className="overlay">
+                    <div className="project-buttons">
+                      {project.githubLink && <a
+                        href={project.githubLink || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="github-btn"
+                      >
+                        <i className="fab fa-github"></i> GitHub
+                      </a>}
+                      {project.demoLink && <a
+                        href={project.demoLink || "#"}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="demo-btn"
+                      >
+                        <i className="fas fa-external-link-alt"></i> Demo
+                      </a>}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="card-content">
+                  <h3 className="project-title">{project.title}</h3>
+                  <div className="project-info">
+                    {project.about && <p>{project.about}</p>}
+                  </div>
+                  <div className="tech-stack">
+                    {project.technologies &&
+                      project.technologies.map((tech, i) => (
+                        <span className="tech" key={i} style={{ backgroundColor: tech.color + '20', color: tech.color }}>
+                          {tech.tech}
+                        </span>
+                      ))}
                   </div>
                 </div>
               </div>
-              <div className="project-info">
-                {project.about && project.about}
-              </div>
-              <div className="tech-stack">
-                {project.technologies &&
-                  project.technologies.map((tech, i) => (
-                    <div className="tech" key={i} style={{ color: tech.color }}>
-                      {"#" + tech.tech}
-                    </div>
-                  ))}
-              </div>
-              {/* {console.log(project.technologies)} */}
             </motion.div>
           ))}
         </div>
+        
         <Pagination
           totalProjects={projects.length}
           projectsPerPage={projectsPerPage}
